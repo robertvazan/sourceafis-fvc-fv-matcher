@@ -1,5 +1,6 @@
 // Part of SourceAFIS matcher for FVC FV: https://sourceafis.machinezoo.com/fvc
 using System;
+using System.Globalization;
 using System.IO;
 
 namespace SourceAFIS.FVC.FV.Matcher;
@@ -46,7 +47,8 @@ public class Program
         }
         try
         {
-            File.AppendAllText(args[2], string.Format("{0} {1} {2} {3}\n", args[0], args[1], shaped != null ? "OK" : "FAIL", shaped ?? 0));
+            File.AppendAllText(args[2], string.Format("{0} {1} {2} {3}",
+                args[0], args[1], shaped != null ? "OK" : "FAIL", (shaped ?? 0).ToString(new CultureInfo("en-US", false).NumberFormat)));
         }
         catch (Exception ex)
         {
