@@ -11,6 +11,7 @@ benchmark_name = lambda: 'Fingerprint Verification'
 benchmark_abbreviation = lambda: 'FV'
 benchmark_url = lambda: 'https://biolab.csr.unibo.it/FVCOnGoing/UI/Form/BenchmarkAreas/BenchmarkAreaFV.aspx'
 is_matcher_part = lambda: True
+bundled_sister_projects = lambda: ['sourceafis-fvc-fv-extractor']
 inception_year = lambda: 2022
 
 generate()
