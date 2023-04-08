@@ -6,6 +6,10 @@
     <Title>SourceAFIS matcher for FVC FV</Title>
     <OutputType>Exe</OutputType>
     <AssemblyName>match</AssemblyName>
+    <Authors>robertvazan</Authors>
+    <RepositoryUrl>https://github.com/robertvazan/sourceafis-fvc-fv-matcher</RepositoryUrl>
+    <PackageProjectUrl>https://sourceafis.machinezoo.com/fvc</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
